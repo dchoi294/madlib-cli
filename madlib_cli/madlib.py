@@ -20,18 +20,8 @@ def merge(bare, input):
 
 intro = """
 **************************************
-**         The year is 1965.        **
+**       Hello, there Welcome!      **
 **                                  **
-**  You're bored out of your mind.  **
-**                                  **
-**   I know! Let's put words into   **
-**   a partially-completed story.   **
-**                                  **
-**      What a terrible time to     **
-**             be alive.            **
-**                                  **
-**     Enter a lower-cased word     **
-**    or number for each prompt.    **
 **************************************
 """
 
