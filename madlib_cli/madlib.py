@@ -1,3 +1,5 @@
+import read
+
 
 def read_template(file):
     try:
@@ -8,7 +10,7 @@ def read_template(file):
 
 
 def parse_template(string):
-    separate = tuple(string)
+    separate = tuple(read.findall(r"{([^{}]*)}", string))
     for i in separate:
         string = string.replace(i, "")
     return string, separate
@@ -20,9 +22,19 @@ def merge(bare, input):
 
 intro = """
 **************************************
-**       Hello, there Welcome!      **
+**       Hello there, Welcome!      **
 **                                  **
 **************************************
 """
 
-print(intro)
+
+if __name__ == "__main__":
+    print(intro)
+    file = read_template("assets/madlib.txt")
+    string, parts = parse_template(file)
+    filled = []
+    for i in parts:
+        print(i)
+        user_input = input("> ")
+        filled.append(user_input)
+    result = merge(string, filled)
