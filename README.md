@@ -4,6 +4,16 @@
 
 Author: Don Choi
 
+### Setup
+
+Create repo on desktop
+Create virtual environment and activate it (.venv)
+Install pytest requirements
+
+### Run
+
+Run test with pytest
+
 ### Tests
 
 - Checks if the file is being read correctly.
