@@ -50,5 +50,7 @@ def main():
         filled.append(user_input)
     result = merge(string, filled)
 
+
 if __name__ == "__main__":
     main()
+    
